@@ -1,20 +1,10 @@
 <?xml version="1.0"?>
-<asterix xmlns="http://www.profv.de/asterix">
-    <!--
-        Generic description of the Asterix binary format
-
-        Standard document:
-        http://www.eurocontrol.int/asterix
-    -->
-    <cat cat="62">
-        <!-- TODO: Fix URL: -->
-        <!--
-            Category 062
-            SDPS Track Messages
-
-            Standard document:
-            http://.../cat062p9ed115.pdf
-        -->
+<asterix
+    xmlns="http://www.profv.de/asterix"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    name="ASTERIX"
+    xlink:href="http://www.eurocontrol.int/asterix/gallery/content/public/documents/pt1ed131.pdf">
+    <cat cat="062" name="SDPS Track Messages" xlink:href="http://www.eurocontrol.int/asterix/gallery/content/public/documents/cat062p9ed115.pdf">
         <!-- TODO: Add information about mandatory / optional to all <spec> elements -->
         <!-- TODO: Remove frn="..." attribute? -->
         <fspec frn="1">
