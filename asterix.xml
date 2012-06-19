@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<asterix xmlns="http://www.profv.de/asterix">
+    <!--
+        Generic description of the Asterix binary format
+
+        Standard document:
+        http://www.eurocontrol.int/asterix
+    -->
+    <cat cat="62">
+        <!-- TODO: Fix URL: -->
+        <!--
+            Category 062
+            SDPS Track Messages
+
+            Standard document:
+            http://.../cat062p9ed115.pdf
+        -->
+        <!-- TODO: Add information about mandatory / optional to all <spec> elements -->
+        <!-- TODO: Remove frn="..." attribute? -->
+        <fspec frn="1">
+            <number id="sac" octets="1"/>
+            <number id="sic" octets="1"/>
+        </fspec>
+        <fspec>
+            <unknown/>
+        </fspec>
+        <fspec frn="3">
+            <number id="sid" octets="1"/>
+        </fspec>
+        <fspec frn="4">
+            <number id="time" octets="3" bitshift="-7"/>
+        </fspec>
+        <fspec frn="5">
+            <number id="lat" octets="4" factor="180" bitshift="-25"/>
+            <number id="lon" octets="4" factor="180" bitshift="-25"/>
+        </fspec>
+        <fspec frn="6">
+            <number id="x" octets="3" bitshift="-1"/>
+            <number id="y" octets="3" bitshift="-1"/>
+        </fspec>
+        <fspec frn="7">
+            <unknown id="frn7" octets="4"/>
+        </fspec>
+        <fspec frn="8">
+            <unknown id="frn8" octets="2"/>
+        </fspec>
+        <fspec frn="9">
+            <unknown id="frn9" octets="2"/>
+        </fspec>
+        <fspec frn="10">
+            <unknown id="frn10" octets="7"/>
+        </fspec>
+        <fspec frn="11" item="I062/380" name="Aircraft Derived Data">
+            <!-- TODO: 28 sub fields via <fspec> -->
+            <unknown/>
+        </fspec>
+        <fspec frn="12">
+            <unknown id="frn12" octets="2"/>
+        </fspec>
+        <fspec frn="13" item="I062/080" name="Track Status">
+            <fx>
+                <bool id="mon"/>
+                <bool id="spi"/>
+                <bool id="mrh"/>
+                <enum id="src" name="Source of calculated track altitude for I062/130">
+                    <value value="000" name="no source"/>
+                    <value value="001" name="GNSS"/>
+                    <value value="010" name="3D radar"/>
+                    <value value="011" name="triangulation"/>
+                    <value value="100" name="height from coverage"/>
+                    <value value="101" name="speed look-up table"/>
+                    <value value="110" name="default height"/>
+                    <value value="111" name="multilateration"/>
+                </enum>
+                <bool id="cnf"/>
+                <bool id="sim"/>
+                <bool id="tse"/>
+                <bool id="tsb"/>
+                <bool id="fpc"/>
+                <bool id="aff"/>
+                <bool id="stp"/>
+                <bool id="kos"/>
+                <bool id="ama"/>
+                <unknown id="md4" bits="2"/>
+                <bool id="me"/>
+                <bool id="mi"/>
+                <unknown id="md5" bits="2"/>
+                <bool id="cst"/>
+                <bool id="psr"/>
+                <bool id="ssr"/>
+                <bool id="mds"/>
+                <bool id="ads"/>
+                <bool id="suc"/>
+                <bool id="aac"/>
+                <unknown id="sds" bits="2"/>
+                <unknown id="ems" bits="3"/>
+            </fx>
+        </fspec>
+        <fspec frn="14" item="I062/290" name="System Track Update Ages">
+            <fspec>
+                <unknown id="trk" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="psr" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="ssr" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="mds" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="ads" octets="2"/>
+            </fspec>
+            <fspec>
+                <unknown id="es" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="vdl" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="uat" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="lop" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="mlt" octets="1"/>
+            </fspec>
+        </fspec>
+        <fspec frn="15">
+            <unknown id="frn15" octets="1"/>
+        </fspec>
+        <fspec frn="16" item="I062/295" name="Track Data Ages">
+            <fspec>
+                <unknown id="mfl" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="md1" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="md2" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="mda" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="md4" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="md5" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="mhg" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="ias" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="tas" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="sal" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="fss" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="tid" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="com" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="sab" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="acs" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="bvr" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="gvr" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="ran" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="tar" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="tan" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="gsp" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="vun" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="met" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="emc" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="pos" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="gal" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="pun" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="mb" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="iar" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="map" octets="1"/>
+            </fspec>
+            <fspec>
+                <unknown id="bps" octets="1"/>
+            </fspec>
+        </fspec>
+        <fspec frn="17">
+            <unknown id="frn17" octets="2"/>
+        </fspec>
+        <fspec frn="18">
+            <unknown id="frn18" octets="2"/>
+        </fspec>
+        <fspec frn="19">
+            <unknown id="frn19" octets="2"/>
+        </fspec>
+        <fspec frn="20">
+            <unknown id="frn20" octets="2"/>
+        </fspec>
+        <fspec frn="21" item="I062/390" name="Flight Plan Related Data">
+            <!-- TODO: 18 sub fields via <fspec> -->
+            <unknown/>
+        </fspec>
+        <fspec frn="22" item="I062/270" name="Target Size &amp; Orientation">
+            <fx>
+                <number id="length" bits="7"/>
+                <number id="orientation" bits="7" factor="360" bitshift="-7"/>
+                <number id="width" bits="7"/>
+            </fx>
+        </fspec>
+        <fspec frn="23">
+            <unknown id="frn23" octets="1"/>
+        </fspec>
+        <fspec frn="24" item="I062/110" name="Mode 5 Data reports &amp; Extended Mode 1 Code 1">
+            <fspec id="sum" name="Mode 5 Summary">
+                <bool id="m5"/>
+                <bool id="id"/>
+                <bool id="da"/>
+                <bool id="m1"/>
+                <bool id="m2"/>
+                <bool id="m3"/>
+                <bool id="mc"/>
+                <bool id="x"/>
+            </fspec>
+            <fspec id="pmn">
+                <unknown id="pmn-fields" octets="4"/>
+            </fspec>
+            <fspec id="pos">
+                <unknown id="pos-fields" octets="6"/>
+            </fspec>
+            <fspec id="ga">
+                <unknown id="ga-fields" octets="2"/>
+            </fspec>
+            <fspec id="em1">
+                <unknown id="em1-fields" octets="2"/>
+            </fspec>
+            <fspec id="tos">
+                <unknown id="tos-fields" octets="1"/>
+            </fspec>
+            <fspec id="xp">
+                <unknown id="xp-fields" octets="1"/>
+            </fspec>
+        </fspec>
+        <fspec frn="25">
+            <unknown id="frn25" octets="2"/>
+        </fspec>
+        <fspec frn="26" item="I062/510" name="Composed Track Number">
+            <list id="ctn">
+                <number id="sui" bits="8"/>
+                <number id="stn" bits="15"/>
+            </list>
+        </fspec>
+        <fspec frn="27" item="I062/500" name="Estimated Accuracies">
+            <!-- TODO: 18 sub fields via <fspec> -->
+            <unknown/>
+        </fspec>
+        <fspec frn="28" item="I062/340" name="Measured Information">
+            <fspec>
+                <unknown id="sid" octets="2"/>
+            </fspec>
+            <fspec>
+                <unknown id="pos" octets="4"/>
+            </fspec>
+            <fspec>
+                <unknown id="hei" octets="2"/>
+            </fspec>
+            <fspec>
+                <unknown id="mdc" octets="2"/>
+            </fspec>
+            <fspec>
+                <unknown id="mda" octets="2"/>
+            </fspec>
+            <fspec>
+                <unknown id="typ" octets="1"/>
+            </fspec>
+        </fspec>
+        <fspec>
+            <unknown/>
+        </fspec>
+        <fspec>
+            <unknown/>
+        </fspec>
+        <fspec>
+            <unknown/>
+        </fspec>
+        <fspec>
+            <unknown/>
+        </fspec>
+        <fspec>
+            <unknown/>
+        </fspec>
+        <fspec frn="34" item="RE" name="Reserved Expansion Field">
+            <unknown/>
+        </fspec>
+        <fspec frn="35" item="SP" name="Reserved For Special Purpose Indicator">
+            <unknown/>
+        </fspec>
+    </cat>
+</asterix>
