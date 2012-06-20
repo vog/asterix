@@ -187,6 +187,3 @@ def main():
             print '--- record ---'
             for key in sorted(record.keys()):
                 print '%r = %r' % (key, record[key])
-
-if __name__ == '__main__':
-    main()
