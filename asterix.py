@@ -165,6 +165,17 @@ def main():
     # TODO: Add command line switch to enable debug output
     #logging.basicConfig(level=logging.DEBUG, format='%(levelname)s:%(message)s')
     logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(message)s')
+    # TODO: Provide XML output, e.g.:
+    #       <asterix xmlns="http://www.profv.de/asterix">
+    #           <cat062 sac="..." sic="..." .../>
+    #           <cat062 sac="..." sic="..." .../>
+    #           <cat062 sac="..." sic="..." ...>
+    #               <ctn sui="..." stn="..."/>
+    #               <ctn sui="..." stn="..."/>
+    #               ...
+    #           </cat062>
+    #           ...
+    #       </asterix>
     data_blocks = parse(sys.stdin)
     for data_block in data_blocks:
         print '### data block ###'
