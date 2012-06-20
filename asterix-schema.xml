@@ -6,6 +6,7 @@
     xlink:href="http://www.eurocontrol.int/asterix/gallery/content/public/documents/pt1ed131.pdf">
     <fspec id="cat062" name="SDPS Track Messages" xlink:href="http://www.eurocontrol.int/asterix/gallery/content/public/documents/cat062p9ed115.pdf">
         <!-- TODO: Add information about mandatory / optional to all <spec> elements -->
+        <!-- TODO: Add information about signed numbers -->
         <multi>
             <number id="sac" octets="1"/>
             <number id="sic" octets="1"/>
