@@ -176,6 +176,7 @@ def main():
     #           </cat062>
     #           ...
     #       </asterix>
+    logging.info('Reading ASTERIX data from stdin')
     data_blocks = parse(sys.stdin)
     for data_block in data_blocks:
         print '### data block ###'
