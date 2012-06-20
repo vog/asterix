@@ -6,21 +6,21 @@
     xlink:href="http://www.eurocontrol.int/asterix/gallery/content/public/documents/pt1ed131.pdf">
     <fspec id="cat062" name="SDPS Track Messages" xlink:href="http://www.eurocontrol.int/asterix/gallery/content/public/documents/cat062p9ed115.pdf">
         <!-- TODO: Add information about mandatory / optional to all <spec> elements -->
-        <record>
+        <multi>
             <number id="sac" octets="1"/>
             <number id="sic" octets="1"/>
-        </record>
+        </multi>
         <unknown failure_hint="Spare FRN 2"/>
         <number id="sid" octets="1"/>
         <number id="time" octets="3" bitshift="-7"/>
-        <record>
+        <multi>
             <number id="lat" octets="4" factor="180" bitshift="-25"/>
             <number id="lon" octets="4" factor="180" bitshift="-25"/>
-        </record>
-        <record>
+        </multi>
+        <multi>
             <number id="x" octets="3" bitshift="-1"/>
             <number id="y" octets="3" bitshift="-1"/>
-        </record>
+        </multi>
         <unknown id="frn7" octets="4"/>
         <unknown id="frn8" octets="2"/>
         <unknown id="frn9" octets="2"/>
@@ -170,7 +170,7 @@
         </fx>
         <unknown id="frn23" octets="1"/>
         <fspec item="I062/110" name="Mode 5 Data reports &amp; Extended Mode 1 Code 1">
-            <record id="sum" name="Mode 5 Summary">
+            <multi id="sum" name="Mode 5 Summary">
                 <bool id="m5"/>
                 <bool id="id"/>
                 <bool id="da"/>
@@ -179,7 +179,7 @@
                 <bool id="m3"/>
                 <bool id="mc"/>
                 <bool id="x"/>
-            </record>
+            </multi>
             <unknown id="pmn" octets="4"/>
             <unknown id="pos" octets="6"/>
             <unknown id="ga" octets="2"/>
