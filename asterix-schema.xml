@@ -10,7 +10,7 @@
             <number id="sac" octets="1"/>
             <number id="sic" octets="1"/>
         </record>
-        <unknown/>
+        <unknown hint="Spare FRN 2"/>
         <number id="sid" octets="1"/>
         <number id="time" octets="3" bitshift="-7"/>
         <record>
@@ -27,7 +27,7 @@
         <unknown id="frn10" octets="7"/>
         <fspec item="I062/380" name="Aircraft Derived Data">
             <!-- TODO: 28 sub fields -->
-            <unknown/>
+            <unknown failure_hint="I062/380"/>
         </fspec>
         <unknown id="frn12" octets="2"/>
         <fspec item="I062/080" name="Track Status">
@@ -141,7 +141,7 @@
         <unknown id="frn20" octets="2"/>
         <fspec item="I062/390" name="Flight Plan Related Data">
             <!-- TODO: 18 sub fields -->
-            <unknown/>
+            <unknown failure_hint="I062/390"/>
         </fspec>
         <fx item="I062/270" name="Target Size &amp; Orientation">
             <number id="length" bits="7"/>
@@ -174,7 +174,7 @@
         </list>
         <fspec item="I062/500" name="Estimated Accuracies">
             <!-- TODO: 18 sub fields -->
-            <unknown/>
+            <unknown failure_hint="I062/500"/>
         </fspec>
         <fspec item="I062/340" name="Measured Information">
             <unknown id="sid" octets="2"/>
@@ -184,11 +184,11 @@
             <unknown id="mda" octets="2"/>
             <unknown id="typ" octets="1"/>
         </fspec>
-        <unknown/>
-        <unknown/>
-        <unknown/>
-        <unknown/>
-        <unknown/>
+        <unknown hint="Spare FRN 29"/>
+        <unknown hint="Spare FRN 30"/>
+        <unknown hint="Spare FRN 31"/>
+        <unknown hint="Spare FRN 32"/>
+        <unknown hint="Spare FRN 33"/>
         <unknown item="RE" name="Reserved Expansion Field"/>
         <unknown item="SP" name="Reserved For Special Purpose Indicator"/>
     </fspec>
