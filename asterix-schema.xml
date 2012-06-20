@@ -57,7 +57,8 @@
             <unknown id="bps" octets="2"/>
         </fspec>
         <unknown id="frn12" octets="2"/>
-        <fx item="I062/080" name="Track Status">
+        <!-- TODO: Remove this id="..." attribute -->
+        <fx id="tmpfx1" item="I062/080" name="Track Status">
             <bool id="mon"/>
             <bool id="spi"/>
             <bool id="mrh"/>
