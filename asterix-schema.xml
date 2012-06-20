@@ -56,7 +56,7 @@
             <unknown id="mac" octets="2"/>
             <unknown id="bps" octets="2"/>
         </fspec>
-        <unknown id="frn12" octets="2"/>
+        <number id="track" octets="2" item="I062/040" name="Track Number"/>
         <!-- TODO: Remove this id="..." attribute -->
         <fx id="tmpfx1" item="I062/080" name="Track Status">
             <bool id="mon"/>
@@ -141,7 +141,7 @@
             <unknown id="map" octets="1"/>
             <unknown id="bps" octets="1"/>
         </fspec>
-        <unknown id="frn17" octets="2"/>
+        <number id="fl" octets="2" rshift="2" item="I062/036" name="Measured Flight Level"/>
         <unknown id="frn18" octets="2"/>
         <unknown id="frn19" octets="2"/>
         <unknown id="frn20" octets="2"/>
