@@ -13,14 +13,14 @@
         </multi>
         <unknown failure_hint="Spare FRN 2"/>
         <number id="sid" octets="1"/>
-        <number id="time" octets="3" bitshift="-7"/>
+        <number id="time" octets="3" rshift="7"/>
         <multi>
-            <number id="lat" octets="4" factor="180" bitshift="-25"/>
-            <number id="lon" octets="4" factor="180" bitshift="-25"/>
+            <number id="lat" octets="4" factor="180" rshift="25"/>
+            <number id="lon" octets="4" factor="180" rshift="25"/>
         </multi>
         <multi>
-            <number id="x" octets="3" bitshift="-1"/>
-            <number id="y" octets="3" bitshift="-1"/>
+            <number id="x" octets="3" rshift="1"/>
+            <number id="y" octets="3" rshift="1"/>
         </multi>
         <unknown id="frn7" octets="4"/>
         <unknown id="frn8" octets="2"/>
@@ -166,7 +166,7 @@
         </fspec>
         <fx item="I062/270" name="Target Size &amp; Orientation">
             <number id="length" bits="7"/>
-            <number id="orientation" bits="7" factor="360" bitshift="-7"/>
+            <number id="orientation" bits="7" factor="360" rshift="7"/>
             <number id="width" bits="7"/>
         </fx>
         <unknown id="frn23" octets="1"/>
