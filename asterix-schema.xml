@@ -166,8 +166,24 @@
         <unknown id="frn19" octets="2"/>
         <unknown id="frn20" octets="2"/>
         <fspec item="I062/390" name="Flight Plan Related Data">
-            <!-- TODO: 18 sub fields -->
-            <unknown failure_hint="I062/390"/>
+            <unknown id="tag" octets="2"/>
+            <unknown id="csn" octets="7"/>
+            <unknown id="ifi" octets="4"/>
+            <unknown id="fct" octets="1"/>
+            <unknown id="tac" octets="4"/>
+            <unknown id="wtc" octets="1"/>
+            <unknown id="dep" octets="4"/>
+            <unknown id="dst" octets="4"/>
+            <unknown id="rds" octets="3"/>
+            <unknown id="cfl" octets="2"/>
+            <unknown id="ctl" octets="2"/>
+            <unknown id="tod" octets="5"/>
+            <unknown id="ast" octets="6"/>
+            <unknown id="sts" octets="1"/>
+            <unknown id="std" octets="7"/>
+            <unknown id="sta" octets="7"/>
+            <unknown id="pem" octets="2"/>
+            <unknown id="pec" octets="7"/>
         </fspec>
         <fx item="I062/270" name="Target Size &amp; Orientation">
             <number id="length" bits="7"/>
