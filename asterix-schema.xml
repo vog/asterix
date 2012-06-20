@@ -26,8 +26,34 @@
         <unknown id="frn9" octets="2"/>
         <unknown id="frn10" octets="7"/>
         <fspec item="I062/380" name="Aircraft Derived Data">
-            <!-- TODO: 28 sub fields -->
-            <unknown failure_hint="I062/380"/>
+            <unknown id="adr" octets="3"/>
+            <unknown id="id" octets="6"/>
+            <unknown id="mhg" octets="2"/>
+            <unknown id="ias" octets="2"/>
+            <unknown id="tas" octets="2"/>
+            <unknown id="sal" octets="2"/>
+            <unknown id="fss" octets="2"/>
+            <unknown id="tis" octets="1"/>
+            <unknown id="tid" octets="16"/>
+            <unknown id="com" octets="2"/>
+            <unknown id="sab" octets="2"/>
+            <unknown id="acs" octets="7"/>
+            <unknown id="bvr" octets="2"/>
+            <unknown id="gvr" octets="2"/>
+            <unknown id="ran" octets="2"/>
+            <unknown id="tar" octets="2"/>
+            <unknown id="tan" octets="2"/>
+            <unknown id="gsp" octets="2"/>
+            <unknown id="vun" octets="1"/>
+            <unknown id="met" octets="8"/>
+            <unknown id="emc" octets="1"/>
+            <unknown id="pos" octets="6"/>
+            <unknown id="gal" octets="2"/>
+            <unknown id="pun" octets="1"/>
+            <unknown id="mb" octets="9"/>
+            <unknown id="iar" octets="2"/>
+            <unknown id="mac" octets="2"/>
+            <unknown id="bps" octets="2"/>
         </fspec>
         <unknown id="frn12" octets="2"/>
         <fspec item="I062/080" name="Track Status">
