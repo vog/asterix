@@ -56,45 +56,43 @@
             <unknown id="bps" octets="2"/>
         </fspec>
         <unknown id="frn12" octets="2"/>
-        <fspec item="I062/080" name="Track Status">
-            <fx>
-                <bool id="mon"/>
-                <bool id="spi"/>
-                <bool id="mrh"/>
-                <enum id="src" name="Source of calculated track altitude for I062/130">
-                    <value value="000" name="no source"/>
-                    <value value="001" name="GNSS"/>
-                    <value value="010" name="3D radar"/>
-                    <value value="011" name="triangulation"/>
-                    <value value="100" name="height from coverage"/>
-                    <value value="101" name="speed look-up table"/>
-                    <value value="110" name="default height"/>
-                    <value value="111" name="multilateration"/>
-                </enum>
-                <bool id="cnf"/>
-                <bool id="sim"/>
-                <bool id="tse"/>
-                <bool id="tsb"/>
-                <bool id="fpc"/>
-                <bool id="aff"/>
-                <bool id="stp"/>
-                <bool id="kos"/>
-                <bool id="ama"/>
-                <unknown id="md4" bits="2"/>
-                <bool id="me"/>
-                <bool id="mi"/>
-                <unknown id="md5" bits="2"/>
-                <bool id="cst"/>
-                <bool id="psr"/>
-                <bool id="ssr"/>
-                <bool id="mds"/>
-                <bool id="ads"/>
-                <bool id="suc"/>
-                <bool id="aac"/>
-                <unknown id="sds" bits="2"/>
-                <unknown id="ems" bits="3"/>
-            </fx>
-        </fspec>
+        <fx item="I062/080" name="Track Status">
+            <bool id="mon"/>
+            <bool id="spi"/>
+            <bool id="mrh"/>
+            <enum id="src" name="Source of calculated track altitude for I062/130">
+                <value value="000" name="no source"/>
+                <value value="001" name="GNSS"/>
+                <value value="010" name="3D radar"/>
+                <value value="011" name="triangulation"/>
+                <value value="100" name="height from coverage"/>
+                <value value="101" name="speed look-up table"/>
+                <value value="110" name="default height"/>
+                <value value="111" name="multilateration"/>
+            </enum>
+            <bool id="cnf"/>
+            <bool id="sim"/>
+            <bool id="tse"/>
+            <bool id="tsb"/>
+            <bool id="fpc"/>
+            <bool id="aff"/>
+            <bool id="stp"/>
+            <bool id="kos"/>
+            <bool id="ama"/>
+            <unknown id="md4" bits="2"/>
+            <bool id="me"/>
+            <bool id="mi"/>
+            <unknown id="md5" bits="2"/>
+            <bool id="cst"/>
+            <bool id="psr"/>
+            <bool id="ssr"/>
+            <bool id="mds"/>
+            <bool id="ads"/>
+            <bool id="suc"/>
+            <bool id="aac"/>
+            <unknown id="sds" bits="2"/>
+            <unknown id="ems" bits="3"/>
+        </fx>
         <fspec item="I062/290" name="System Track Update Ages">
             <unknown id="trk" octets="1"/>
             <unknown id="psr" octets="1"/>
