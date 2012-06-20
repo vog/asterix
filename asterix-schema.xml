@@ -10,7 +10,7 @@
             <number id="sac" octets="1"/>
             <number id="sic" octets="1"/>
         </record>
-        <unknown hint="Spare FRN 2"/>
+        <unknown failure_hint="Spare FRN 2"/>
         <number id="sid" octets="1"/>
         <number id="time" octets="3" bitshift="-7"/>
         <record>
@@ -226,11 +226,11 @@
             <unknown id="mda" octets="2"/>
             <unknown id="typ" octets="1"/>
         </fspec>
-        <unknown hint="Spare FRN 29"/>
-        <unknown hint="Spare FRN 30"/>
-        <unknown hint="Spare FRN 31"/>
-        <unknown hint="Spare FRN 32"/>
-        <unknown hint="Spare FRN 33"/>
+        <unknown failure_hint="Spare FRN 29"/>
+        <unknown failure_hint="Spare FRN 30"/>
+        <unknown failure_hint="Spare FRN 31"/>
+        <unknown failure_hint="Spare FRN 32"/>
+        <unknown failure_hint="Spare FRN 33"/>
         <unknown item="RE" name="Reserved Expansion Field"/>
         <unknown item="SP" name="Reserved For Special Purpose Indicator"/>
     </fspec>
