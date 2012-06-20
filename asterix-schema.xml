@@ -96,36 +96,16 @@
             </fx>
         </fspec>
         <fspec item="I062/290" name="System Track Update Ages">
-            <fspec>
-                <unknown id="trk" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="psr" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="ssr" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="mds" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="ads" octets="2"/>
-            </fspec>
-            <fspec>
-                <unknown id="es" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="vdl" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="uat" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="lop" octets="1"/>
-            </fspec>
-            <fspec>
-                <unknown id="mlt" octets="1"/>
-            </fspec>
+            <unknown id="trk" octets="1"/>
+            <unknown id="psr" octets="1"/>
+            <unknown id="ssr" octets="1"/>
+            <unknown id="mds" octets="1"/>
+            <unknown id="ads" octets="2"/>
+            <unknown id="es" octets="1"/>
+            <unknown id="vdl" octets="1"/>
+            <unknown id="uat" octets="1"/>
+            <unknown id="lop" octets="1"/>
+            <unknown id="mlt" octets="1"/>
         </fspec>
         <unknown id="frn15" octets="1"/>
         <fspec item="I062/295" name="Track Data Ages">
@@ -231,7 +211,7 @@
         <unknown failure_hint="Spare FRN 31"/>
         <unknown failure_hint="Spare FRN 32"/>
         <unknown failure_hint="Spare FRN 33"/>
-        <unknown item="RE" name="Reserved Expansion Field"/>
-        <unknown item="SP" name="Reserved For Special Purpose Indicator"/>
+        <unknown failure_hint="Reserved Expansion Field"/>
+        <unknown failure_hint="Reserved For Special Purpose Indicator"/>
     </fspec>
 </schema>
