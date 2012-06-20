@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<asterix
+<schema
     xmlns="http://www.profv.de/asterix"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     name="ASTERIX"
@@ -327,4 +327,4 @@
             <unknown/>
         </fspec>
     </cat>
-</asterix>
+</schema>
